@@ -1,0 +1,44 @@
+{
+  "id": "octop",
+  "name": "Octop",
+  "version": "1.0.2",
+  "description": "Agnx 外置：腾讯云 Octop 本机 AI 助手控制台（多用户 / 多 Agent / 微信·飞书·钉钉），单端口 :8123",
+  "engines": {
+    "agnx": ">=1.0.0"
+  },
+  "main": "./dist/index.js",
+  "icon": "./.agnx/assets/octop-icon.svg",
+  "iconDark": "./.agnx/assets/octop-icon-dark.svg",
+  "platforms": {
+    "desktop": "supported",
+    "web": "supported",
+    "mobile": "unsupported"
+  },
+  "sidecar": {
+    "supervised": true,
+    "ensureTool": ".agnx/tools/ensure-octop.mjs",
+    "stateFile": "octop.json",
+    "defaultPort": 8123,
+    "lifecycle": "lazy",
+    "label": "Octop 服务"
+  },
+  "guest": {
+    "kind": "web",
+    "auth": "none",
+    "preferStrategy": "auto"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "id": "octop.open",
+        "title": "Octop"
+      }
+    ],
+    "panels": [
+      {
+        "id": "octop.main",
+        "title": "Octop"
+      }
+    ]
+  }
+}

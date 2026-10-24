@@ -1,0 +1,10 @@
+{
+  "appId": "octop",
+  "installState": "installed",
+  "launchMode": "packaged",
+  "source": {
+    "kind": "github",
+    "url": "https://github.com/TencentCloud/Octop"
+  },
+  "updatedAt": "2026-10-19T20:48:03.301Z"
+}

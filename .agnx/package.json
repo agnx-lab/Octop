@@ -1,0 +1,23 @@
+{
+  "name": "@agnx-sub/octop",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "node /Users/apple/Documents/github/agnx/scripts/sub-apps/lib/build-agnx-glue.mjs --root=..",
+    "dev": "node /Users/apple/Documents/github/agnx/scripts/sub-apps/lib/dev-watch-agnx-glue.mjs --root=.."
+  },
+  "peerDependencies": {
+    "@agnx-lab/app-sdk": "*",
+    "react": "*",
+    "react-native": "*",
+    "react-native-unistyles": "*",
+    "react-native-svg": "*"
+  },
+  "peerDependenciesMeta": {
+    "@agnx-lab/app-sdk": {
+      "optional": true
+    }
+  }
+}
